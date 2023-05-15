@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font: 100;
+color: blueviolet;
+}
+
+.fundo {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-image: url("giphy.gif");
+}
+
+.clouds {
+  position: relative;
+  content: "";
+  top: 50px;
+  right: 0;
+  left: -2000px;
+  width: 500%;
+  height: 200px;
+  background-image: url("frog-spin.gif");
+  background-repeat: repeat-x;
+  animation: clouds 50s linear infinite;
+}
+@keyframes clouds {
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.dancingfrog {
+  position: absolute;
+  bottom: 0;
+  height: 250px;
+  right: 0;
+  left: -2000px;
+  width: 500%;
+  background-image: url("hâm-frog-toad.gif");
+  background-repeat: repeat-x;
+  animation: mountains 10s linear infinite;
+}
+
+@keyframes mountains {
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.airplane {
+  position: absolute;
+  top: 300px;
+  transform: translateX(800px);
+  z-index: 1;
+}
+
+@keyframes airplane {
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.flame {
+  position: relative;
+  top: -40px;
+  left: 150px;
+  height: 10px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: pink;
+  z-index: -1;
+  animation: flame 0.3s linear infinite;
+}
+
+.flame2 {
+  top: -195px;
+  left: 115px;
+  background-color: yellow;
+}
+
+@keyframes flame {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
